@@ -1,0 +1,11 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Subject: Verify your account
+From: django@db.local
+To: django12@gb.local
+Date: Thu, 29 Jul 2021 20:25:56 -0000
+Message-ID: <162759035618.13516.4327558509153785966@DESKTOP-T298TVL>
+
+http://localhost:8088/auth/verify/django12@gb.local/308df04f03875daf88fa260216f5d4e9e8378313/
+-------------------------------------------------------------------------------
