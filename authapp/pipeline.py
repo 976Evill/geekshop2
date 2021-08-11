@@ -20,6 +20,7 @@ def save_user_profile(backend,user,response,*args,**kwargs):
                 user.shopuserprofile.gender = ShopUserProfile.FEMALE
         elif data['sex'] == 2:
             user.shopuserprofile.gender = ShopUserProfile.MALE
+
     if 'about' in data:
         user.shopuserprofile.about_me = data['about']
 

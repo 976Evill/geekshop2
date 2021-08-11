@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'mainapp',
     'authapp',
     'basketapp',
-    'adminapp'
+    'adminapp',
+    'ordersapp'
 ]
 
 MIDDLEWARE = [
@@ -175,6 +176,7 @@ SOCIAL_AUTH_PIPELINE = (
     'social_core.pipeline.social_auth.associate_user',
     'social_core.pipeline.social_auth.load_extra_data',
     'social_core.pipeline.user.user_details',
+
 )
 
 # DEFAULT_AUTO_FIELD='django.db.models.AutoField'
