@@ -1,0 +1,5 @@
+psycopg2-binary
+django
+requests
+pillow
+social-auth-app-django

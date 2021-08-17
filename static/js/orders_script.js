@@ -50,6 +50,11 @@ window.onload = function () {
         $('.order_total_coast').html(order_total_coast);
 
     }
+
+    function orderSummaryRecalc({
+
+
+                                })
     $('formset_row').formset()(
         opts:{
             addText:"добавить товар",
@@ -63,6 +68,27 @@ window.onload = function () {
         delta_quantity =-quantity_arr[orderitem_num];
         orderSummaryUpdate(price_arr[orderitem_num],delta_quantity);
     }
+
+    $('.order_form ').on(a:'change',b:'select'),function (){
+        var target = event.target;
+         orderitem_num = parseInt(target.name.replace('orderitems-','').replace('-product',''));
+         var orderitem_product_pk = target.option[target.selectedIndex].value;
+         $.ajax(url:{
+             url:'/order/product/' + orderitem_product_pk +/'price/',
+             success:function(data){
+                 if(data.price){
+                     price_arr[orderitem_num] = parseFloat(data.price);
+                     var price_html = "<span>" + data.price.toString().replace('.',',') + "</span>";
+                     var curr_tr = $('.order_form table').find(selector:'tr:eq('+ orderitem_num + 1 + ')');
+                     curr_tr.find('selector:'td:eq(2)').html(price_html);
+                 }
+
+             }
+
+             }
+
+         );
+    });
     )
 
 }
