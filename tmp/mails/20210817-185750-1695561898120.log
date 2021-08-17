@@ -1,0 +1,11 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Subject: Verify your account
+From: django@db.local
+To: an.lebedev@mail.ru
+Date: Tue, 17 Aug 2021 15:57:50 -0000
+Message-ID: <162921587033.15244.15573776156593806539@DESKTOP-T298TVL>
+
+http://localhost:8088/auth/verify/an.lebedev@mail.ru/784aca47992bd607aff4a4d28c3bb69726d5abc1/
+-------------------------------------------------------------------------------
